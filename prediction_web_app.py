@@ -2,9 +2,7 @@ import numpy as np
 import streamlit as st
 import pickle
 
-
-sav_file = pickle.load(open('E:\Python3\Heart_disease_prediction\heart_disease_prediction.sav', "rb"))
-
+sav_file = pickle.load(open('heart_disease_prediction.sav', "rb"))
 
 def heart_disease(input):
     
@@ -15,7 +13,6 @@ def heart_disease(input):
       return "The person is suffered from heart disease"
     else:
       return "The person is not suffered from heart disease"
-
 
 def main():
     
